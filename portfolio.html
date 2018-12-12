@@ -1,7 +1,13 @@
 <!--This template pulled from 
     https://getbootstrap.com/docs/4.1/getting-started/introduction/ 
     on 12/8/2018-->
-
+<!--     /* Color scheme - based on CPSLO green and white
+    green = #00684E
+    gold = #B48A09
+    light green = #12B48C
+    purple = #6B0C75
+    dark gold = #352905
+    */ -->
 <!doctype html>
 <html lang="en">
 
@@ -14,13 +20,132 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 
+
+    <style>
+        .bg-snow {
+            background-color: snow;
+        }
+        .bg-antiquewhite {
+            background-color: antiquewhite;
+        }
+
+        .bg-green {
+            background-color: #00684E;
+        }
+
+        .hov-lgreen:hover {
+            background-color: #12B48C;
+        }
+
+        .text-green {
+            color: #00684E;
+        }
+
+        .text-gold {
+            color: #B48A09;
+        }
+
+        .op-8 {
+            opacity: 0.8;
+        }
+    
+        .mw-200px {
+            max-width: 200px;
+        }
+
+    
+    </style>
+
     <title>Bradley Jensen - My Portfolio</title>
 </head>
 
-<body>
-    <!--container-->
+<body class="bg-antiquewhite">
+    <!--navbar goes here-->
+    <nav class="navbar navbar-expand-sm navbar-light text-light bg-green mb-3">
+        <a class="navbar-brand font-weight-bold">Bradley Jensen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!--now a portfolio section, i'm thinking 3 columns that have a couple breakpoints on md and sm screens-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="index.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Portfolio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item text-light">
+                    <a class="nav-link text-light" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--container-->
+    <div class="container border shadow bg-snow">
+        <!--now a portfolio section, i'm thinking 3 columns that have a couple breakpoints on md and sm screens-->
+        <div class="row">
+            <div class="col-12 border-bottom border-dark mb-3">
+                <h1 class="text-green">My Portfolio</h1>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <!--three columns that break twice-->
+            <div class="col-sm-4">
+                <div class="card mw-200px mb-2 mx-auto">
+                    <img class="card-img-top" src="assets/images/wordgame.jpg">
+                    <div class="card-body bg-green hov-lgreen op-8 w-100 position-absolute" style="bottom: 0">
+                        <h5 class="text-light">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card mw-200px mb-2 mx-auto">
+                    <img class="card-img-top" src="assets/images/trivia.jpg">
+                    <div class="card-body bg-green hov-lgreen op-8 w-100 position-absolute" style="bottom: 0">
+                        <h5 class="text-light">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card mw-200px mb-2 mx-auto">
+                    <img class="card-img-top" src="assets/images/roleplay.jpg">
+                    <div class="card-body bg-green hov-lgreen op-8 w-100 position-absolute" style="bottom: 0">
+                        <h5 class="text-light">Card title</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row text-center">
+            <div class="col-sm-4 ">
+                <div class="card mw-200px mb-2 mx-auto">
+                    <img class="card-img-top" src="assets/images/infowidget.jpg">
+                    <div class="card-body bg-green hov-lgreen op-8 w-100 position-absolute" style="bottom: 0">
+                        <h5 class="text-light">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card mw-200px mb-2 mx-auto">
+                    <img class="card-img-top" src="assets/images/rps.jpg">
+                    <div class="card-body bg-green hov-lgreen op-8 w-100 position-absolute" style="bottom: 0">
+                        <h5 class="text-light">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <!--empty column for now-->
+            </div>
+
+        </div>
+    </div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
