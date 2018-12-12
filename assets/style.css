@@ -1,0 +1,32 @@
+
+.bg-snow {
+    background-color: snow;
+}
+.bg-antiquewhite {
+    background-color: antiquewhite;
+}
+
+.bg-green {
+    background-color: #00684E;
+}
+
+.hov-lgreen:hover {
+    background-color: #12B48C;
+}
+
+.text-green {
+    color: #00684E;
+}
+
+.text-gold {
+    color: #B48A09;
+}
+
+.op-8 {
+    opacity: 0.8;
+}
+
+.mw-200px {
+    max-width: 200px;
+}
+
