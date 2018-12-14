@@ -43,15 +43,31 @@
     </nav>
     <!--container-->
     <div class="container border shadow bg-snow">
+        <!--row with one column for header-->
         <div class="row">
             <div class="col-12 border-bottom border-dark mb-3">
                 <h1 class="text-green">Contact Me</h1>
             </div>
         </div>
-    
-    <!--row with one column for header-->
-    <!--now add a contact form-->
 
+        <!--now add a contact form-->
+        <form>
+            <div class="form-group">
+                <label for="inputName">Password</label>
+                <input type="name" class="form-control" id="inputName" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="inputTextArea">Message</label>
+                <textarea class="form-control" id="inputTextArea" rows="10" placeholder="Enter message here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
 
 
     </div>
