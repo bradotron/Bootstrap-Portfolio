@@ -1,84 +1,131 @@
-<!--This template pulled from 
-    https://getbootstrap.com/docs/4.1/getting-started/introduction/ 
-    on 12/8/2018-->
+<!--
+  This template pulled from
+  https://getbootstrap.com/docs/4.1/getting-started/introduction/
+  on 12/8/2018
+-->
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
 
     <title>Bradley Jensen - Contact Me</title>
-</head>
+  </head>
 
-<body class="bg-antiquewhite">
-    <!--navbar goes here-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-green mb-3">
-        <a class="navbar-brand text-light font-weight-bold">Bradley Jensen</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <body class="bg-antiquewhite">
+    <!-- navbar goes here -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top bg-green mb-3">
+      <a class="navbar-brand text-light font-weight-bold">Bradley Jensen</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Contact<span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
-    <!--container-->
+    <!-- container -->
     <div class="container border shadow bg-snow">
-        <!--row with one column for header-->
-        <div class="row">
-            <div class="col-12 border-bottom border-dark mb-3">
-                <h1 class="text-green">Contact Me</h1>
-            </div>
+      <!-- row with one column for header -->
+      <div class="row">
+        <div class="col-12 border-bottom border-dark mb-3">
+          <h1 class="text-green">Contact Me</h1>
+        </div>
+      </div>
+
+      <!-- now add a contact form -->
+      <form>
+        <div class="form-group">
+          <label for="inputName">Password</label>
+          <input
+            type="name"
+            class="form-control"
+            id="inputName"
+            placeholder="John Doe"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputEmail">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="inputTextArea">Message</label>
+          <textarea
+            class="form-control"
+            id="inputTextArea"
+            rows="10"
+            placeholder="Enter message here..."
+          ></textarea>
         </div>
 
-        <!--now add a contact form-->
-        <form>
-            <div class="form-group">
-                <label for="inputName">Password</label>
-                <input type="name" class="form-control" id="inputName" placeholder="John Doe">
-            </div>
-            <div class="form-group">
-                <label for="inputEmail">Email address</label>
-                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-                <label for="inputTextArea">Message</label>
-                <textarea class="form-control" id="inputTextArea" rows="10" placeholder="Enter message here..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-
-
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
+
+    <div class="footer text-center bg-green">
+      <span class="text-light">Copyright 2018</span>
+    </div>
+    <footer style="height: 60px"></footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
